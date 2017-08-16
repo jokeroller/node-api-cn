@@ -2,7 +2,7 @@
 added: v0.1.16
 -->
 
-`exports` 变量是在模块的文件级别作用域内有效的，它在模块被执行前被赋于 `module.exports` 的值。
+`exports` 变量在模块所在的文件内是有效的，在模块被执行前他被赋给 `module.exports` 。
 
 它有一个快捷方式，以便 `module.exports.f = ...` 可以被更简洁地写成 `exports.f = ...`。
 注意，就像任何变量，如果一个新的值被赋值给 `exports`，它就不再绑定到 `module.exports`：
